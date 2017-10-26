@@ -1,10 +1,26 @@
 {
   "name": "mdi-iconset-svg",
+  "version": "1.0.0",
+  "description": "Iconset for the Material Design Icons collection",
+  "authors": [
+    "kriss-kross-io <hello@kriss-kross.io> (https://kriss-kross.io)"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "icon"
+  ],
   "main": "mdi-iconset-svg.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kriss-kross-io/mdi-iconset-svg"
+  },
+  "homepage": "https://github.com/kriss-kross-io/mdi-iconset-svg",
   "dependencies": {
-    "iron-icon": "PolymerElements/iron-icon",
-    "iron-iconset-svg": "PolymerElements/iron-iconset-svg",
-    "polymer": "Polymer/polymer"
+    "iron-icon": "polymerelements/iron-icon#^1.0.0",
+    "iron-iconset-svg": "polymerelements/iron-iconset-svg#^1.0.0",
+    "polymer": "Polymer/polymer#^1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

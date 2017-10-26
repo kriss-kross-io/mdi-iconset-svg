@@ -1,4 +1,23 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/kriss-kross-io/mdi-iconset-svg)
+
 # \<mdi-iconset-svg\>
+
+Iconset for the Material Design Icons collection
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="mdi-agriculture-iconset-svg.html">
+    <link rel="import" href="../iron-icons/iron-icons.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<iron-icon icon="mdi-agriculture:cow"></iron-icon>
+```
 
 ## Installation
 
@@ -47,3 +66,11 @@ routing for the app:
 ``` bash
 polymer serve
 ```
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
