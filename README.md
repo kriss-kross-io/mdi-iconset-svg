@@ -4,21 +4,6 @@
 
 Iconset for the Material Design Icons collection
 
-<!--
-```
-<custom-element-demo>
-  <template>
-    <link rel="import" href="mdi-agriculture-iconset-svg.html">
-    <link rel="import" href="../iron-icons/iron-icons.html">
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
-```html
-<iron-icon icon="mdi-agriculture:cow"></iron-icon>
-```
-
 ## Installation
 
 ``` bash
@@ -27,10 +12,18 @@ bower install --save mdi-iconset-svg
 
 ## Usage
 
-``` html
-<link rel="import" href="../bower_components/mdi-iconset-svg/mdi-logo-iconset-svg.html">
-<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="mdi-logo-iconset-svg.html">
+    <link rel="import" href="../iron-icons/iron-icons.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
 <iron-icon icon="mdi-logo:polymer"></iron-icon>
 ```
 
