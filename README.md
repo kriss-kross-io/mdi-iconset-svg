@@ -7,7 +7,7 @@ Iconset for the Material Design Icons collection
 ## Installation
 
 ``` bash
-bower install --save mdi-iconset-svg
+bower install --save kriss-kross-io/mdi-iconset-svg
 ```
 
 ## Usage
