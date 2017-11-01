@@ -11,7 +11,6 @@
     "icon"
   ],
   "main": "mdi-iconset-svg.html",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/kriss-kross-io/mdi-iconset-svg"
