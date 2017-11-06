@@ -1,6 +1,6 @@
 {
   "name": "mdi-iconset-svg",
-  "version": "2.0.2",
+  "version": "1.0.3",
   "description": "Iconset for the Material Design Icons collection",
   "authors": [
     "kriss-kross-io <hello@kriss-kross.io> (https://kriss-kross.io)"
@@ -17,37 +17,14 @@
   },
   "homepage": "https://github.com/kriss-kross-io/mdi-iconset-svg",
   "dependencies": {
-    "iron-icon": "PolymerElements/iron-icon#1 - 2",
-    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#1 - 2",
-    "polymer": "Polymer/polymer#1.9 - 2"
+    "iron-icon": "PolymerElements/iron-icon#^1.0.0",
+    "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.0",
+    "polymer": "Polymer/polymer#^1.9"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
-    "iron-meta": "PolymerElements/iron-meta#1 - 2",
-    "paper-styles": "PolymerElements/paper-styles#1 - 2",
-    "web-component-tester": "^6.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
-  },
-  "variants": {
-    "1.x": {
-      "dependencies": {
-        "iron-icon": "PolymerElements/iron-icon#^1.0.0",
-        "iron-iconset-svg": "PolymerElements/iron-iconset-svg#^1.0.0",
-        "polymer": "Polymer/polymer#^1.9"
-      },
-      "devDependencies": {
-        "iron-component-page": "PolymerElements/iron-component-page#1.0.0",
-        "iron-meta": "PolymerElements/iron-meta#^1.0.0",
-        "paper-styles": "PolymerElements/paper-styles#^1.0.2",
-        "web-component-tester": "^4.0.0",
-        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-      },
-      "resolutions": {
-        "webcomponentsjs": "^0.7"
-      }
-    }
-  },
-  "resolutions": {
-    "webcomponentsjs": "^1.0.0"
+    "iron-component-page": "PolymerElements/iron-component-page#1.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.2",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   }
 }

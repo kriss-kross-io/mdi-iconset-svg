@@ -15,7 +15,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../../paper-styles/color.html">
-  <link rel="import" href="../../iron-meta/iron-meta.html">
 
   <!-- load main iconset -->
   <link rel="import" href="../mdi-iconset-svg.html">
@@ -86,16 +85,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </dom-bind>
 
   <script>
-    window.addEventListener('WebComponentsReady', function() {
-      scope.getIconsets = function() {
-        return new Polymer.IronMeta({type: 'iconset'}).list;
-      };
-      scope.getIconNames = function(iconset) {
-        return iconset.getIconNames();
-      };
-      scope.parentNode.getIconsets = scope.getIconsets;
-      scope.parentNode.getIconNames = scope.getIconNames;
-    });
+    document.querySelector('[is=dom-bind]').getIconsets = function() {
+      return new Polymer.IronMeta({type: 'iconset'}).list;
+    };
+    document.querySelector('[is=dom-bind]').getIconNames = function(iconset) {
+      return iconset.getIconNames();
+    };
   </script>
 </body>
 </html>
