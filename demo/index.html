@@ -12,6 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <head>
   <title>iron-icons demo</title>
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../../paper-styles/color.html">
   <link rel="import" href="../../iron-meta/iron-meta.html">
@@ -68,29 +69,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <dom-bind>
     <template is="dom-bind" id="scope">
-      <dom-repeat>
-        <template is="dom-repeat" id="iconsetRepeat">
-          <h2>{{item.name}}</h2>
-          <div class="set">
-            <template is="dom-repeat" items="{{getIconNames(item)}}">
-              <span class="container">
-                <iron-icon icon="{{item}}"></iron-icon>
-                <div>{{item}}</div>
-              </span>
-            </template>
-          </div>
-        </template>
-      </dom-repeat>
+
+      <template is="dom-repeat" id="iconsetRepeat" items="[[getIconsets()]]">
+        <h2>{{item.name}}</h2>
+        <div class="set">
+          <template is="dom-repeat" items="[[getIconNames(item)]]">
+            <span class="container">
+              <iron-icon icon="[[item]]"></iron-icon>
+              <div>{{item}}</div>
+            </span>
+          </template>
+        </div>
+      </template>
+
     </template>
   </dom-bind>
 
   <script>
     window.addEventListener('WebComponentsReady', function() {
+      scope.getIconsets = function() {
+        return new Polymer.IronMeta({type: 'iconset'}).list;
+      };
       scope.getIconNames = function(iconset) {
         return iconset.getIconNames();
       };
+      scope.parentNode.getIconsets = scope.getIconsets;
       scope.parentNode.getIconNames = scope.getIconNames;
-      iconsetRepeat.items = new Polymer.IronMeta({type: 'iconset'}).list;
     });
   </script>
 </body>
